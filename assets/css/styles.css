@@ -1,5 +1,5 @@
 .header {
-  background-color: #1f2937;
+  background-color: #353545;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,15 +21,16 @@
   font-size: 18px;
   color: #e5e7eb;
   padding: 15px 10px;
-  transition: all .2s;
+  border-bottom: 2px solid transparent;
+  transition: all .375s;
 }
 
 .header a:hover {
-  background-color: #3882f6;
+  border-color: #3882f6;
 }
 
 .hero {
-  background-color: #1f2937;
+  background-color: #353545;
   height: 77.3vh;;
   display: flex;
   gap: 50px;
@@ -63,11 +64,18 @@
   background-color: #3882f6;
   cursor: pointer;
   width: 125px;
+  transition: all .375s;
+}
+
+.hero button:hover {
+  box-shadow: 5px 5px 10px #1F2937;
 }
 
 .hero img {
   height: 240px;
   width: 500px;
+  box-shadow: 10px 10px 10px #1F2937;
+  border-radius: 15px;
 }
 
 .info {
@@ -92,6 +100,12 @@
 .info li {
   width: 170px;
   height: 170px;
+  cursor: pointer;
+  transition: all .375s;
+}
+
+.info li:hover {
+  scale: 1.1;
 }
 
 .info div {
@@ -170,10 +184,16 @@
   padding: 5px 30px;
   border-radius: 6px;
   cursor: pointer;
+  transition: all .375s;
+}
+
+.box button:hover {
+  background-color: #fff;
+  color: #3882f6;
 }
 
 footer {
-  background-color: #1f2937;
+  background-color: #353545;
   display: flex;
   align-items: center;
   justify-content: center;
